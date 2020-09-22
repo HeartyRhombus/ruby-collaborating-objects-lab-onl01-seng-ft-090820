@@ -13,7 +13,8 @@ class MP3Importer
   def import
     # binding.pry
     files.each do |file|
-      Song.new_by_filename(file.gsub(".mp3", ""))
+      filename = file.gsub(".mp3", "")
+      Song.new_by_filename(filename)
     end
   end
 

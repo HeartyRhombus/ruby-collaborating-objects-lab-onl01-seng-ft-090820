@@ -29,7 +29,7 @@ class Artist
     #   # artist
     # end
     # artist
-    !!@@all.find { |artist| artist.name == name} ? @@all.find { |artist| artist.name == name} : Artist.new(name)
+    @@all.find { |artist| artist.name == name} ? @@all.find { |artist| artist.name == name} : Artist.new(name)
   end
 
   def print_songs
